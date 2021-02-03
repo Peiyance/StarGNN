@@ -49,7 +49,7 @@ def main():
     else:
         n_node = 310
 
-    model = trans_to_cuda(SessionGraph(opt, n_node))
+    model = trans_to_cuda(StarSessionGraph(opt, n_node))
 
     start = time.time()
     best_result = [0, 0]
